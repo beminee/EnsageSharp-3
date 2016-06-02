@@ -67,6 +67,7 @@ namespace Dagon_Stealer {
                             return;
                         var range = ShitDickFuck[dagon.Level - 1];
                         var damage = Math.Floor(Penis[dagon.Level - 1] * (1 - v.MagicDamageResist));
+                        [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
                         if (LowUsageDistance(me, v) < (range * range) && v.Health < damage)
                             dagon.UseAbility(v);
                     }
